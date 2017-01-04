@@ -36,7 +36,7 @@ FLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(SRC_O)
-	@clang -o $(NAME) $(SRC_O) libmlx.a -L libft/ -lft -lmlx -framework OpenGL -framework AppKit
+	@clang -o $(NAME) $(SRC_O) libmlx.a -L libft/ -lft -framework OpenGL -framework AppKit
 
 $(SRC_O): $(SRC_C)
 	@make -C libft/
